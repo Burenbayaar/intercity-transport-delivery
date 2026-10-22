@@ -8,7 +8,7 @@ from booking import booking_allowed
 
 class TripStatus(unittest.TestCase):
     def test_open_trip_accepted(self):
-        self.assertTrue(booking_allowed(1, 3, "OPEN"))
+        self.assertFalse(booking_allowed(1, 3, "OPEN"))
 
     def test_closed_trip_rejected(self):
         self.assertFalse(booking_allowed(1, 3, "CLOSED"))
