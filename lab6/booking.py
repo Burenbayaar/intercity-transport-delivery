@@ -12,3 +12,8 @@ def booking_allowed(seat_count: int, available_seats: int, trip_status: str) -> 
     if not isinstance(trip_status, str) or available_seats < 0:
         return False
     return trip_status == "OPEN" and 0 < seat_count <= available_seats
+
+
+
+
+Нийлсэн нөхцөлийг шалгалаа. Аялал OPEN байх, хүссэн суудлын тоо эерэг байх, сул суудлаас хэтрэхгүй байх гурван шаардлагыг зэрэг хадгалсан байна. CLOSED аяллын багтаамж хүрэлцэж байсан ч захиалгыг хориглоно.
